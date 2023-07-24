@@ -1,0 +1,13 @@
+<div class="p-3 shadow-md flex justify-between flex-row bg-white mb-6" *ngFor="let alumno of alumnos">
+    <div class="flex flex-col">
+        <span class="text-lg font-semibold">{{alumno.name}}</span>
+        <span class="font-mono">{{alumno.age}}</span>
+    </div>
+    <div class="flex justify-end">
+        <button class="hover:bg-gray-200 active:bg-gray-300 rounded-full h-10 w-10 flex items-center justify-center" (click)="removerAlumno(alumno)">
+            <span class="material-symbols-outlined">
+                delete
+            </span>
+        </button>
+    </div>
+</div>

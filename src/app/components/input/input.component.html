@@ -1,0 +1,9 @@
+<div class="flex flex-col gap-3 bg-white rounded-md shadow-lg p-2">
+    <h3 class="text-center text-xs font-semibold py-2 border-b">Ingresa un Nuevo Alumno</h3>
+    <input class="px-2 py-1 rounded-md border" type="text" name="name" placeholder="Name" #txtname (input)="changeName(txtname)" >
+    <input class="px-2 py-1 rounded-md border" type="number" name="age" placeholder="Age" min="18" value="18" #txtage (input)="changeAge(txtage)">
+
+    <button class="w-full py-2 rounded-md  bg-green-400" (click)="guardarAlumno(txtname, txtage)">
+        Guardar
+    </button>
+</div>
